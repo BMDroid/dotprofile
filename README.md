@@ -8,5 +8,3 @@ These are the various config files for the Manjaro i3, inclluding system setting
 3. Replace the bash to the zsh and install the on-my-zsh, with the zsh-autosuggestion plugin configured.
 4. Rice the i3, including change the theme to the Arc-Dark and replace with the Paper Icons. 
 5. Also, replace the default dmenu with the rofi.
-
-This is a pull test.
