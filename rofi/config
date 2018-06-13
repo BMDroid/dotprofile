@@ -1,0 +1,6 @@
+rofi.combi-modi:           window,drun
+rofi.theme:                Arc-Dark
+rofi.font:                 Inconsolata Nerd Font 18
+rofi.modi:                 combi
+rofi.lines:                5
+rofi.width:                25
