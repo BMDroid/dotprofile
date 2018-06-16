@@ -65,7 +65,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec google-chrome-stable
+bindsym $mod+F2 exec qutebrowser
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+F4 exec fsearch
 # bindsym $mod+F3 exec ranger
@@ -169,7 +169,8 @@ set $monitor2 HDMI2
 workspace $ws1 output $monitor2
 workspace $ws2 output $monitor2
 workspace $ws3 output $monitor2
-workspace $ws4 output $monitor1
+workspace $ws4 output $monitor2
+# workspace $ws4 output $monitor1
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -210,7 +211,7 @@ assign [class="Google-chrome"] $ws1
 assign [class="Code"] $ws2
 assign [class="jetbrains-idea-ce"] $ws2
 # assign [class="URxvt"] $ws3
-assign [class="Thunar"] $ws3
+# assign [class="Thunar"] $ws3
 assign [class="Deluge"] $ws4
 assign [class="qBittorrent"] $ws4
 assign [class="sun-awt-X11-XFramePeer"] $ws4
@@ -247,6 +248,7 @@ for_window [class="Xfburn"] floating enable
 for_window [class="Fcitx-config-gtk3"] floating enable border normal
 for_window [class="netease-cloud-music"] floating enable border normal
 for_window [class="Fsearch"] floating enable border normal
+for_window [class="GNU Octave"] floating enable border normal
 # for_window [class="vlc"] floating enable border normal
 # for_window [class="sun-awt-X11-XFramePeer"] floating enable border normal
 # for_window [class="java-lang-Thread"] floating enable border normal
@@ -326,7 +328,8 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id fcitx
 # exec_always xrandr --output HDMI2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --mode 1920x1080 --pos 0x360 --rotate normal --output VIRTUAL1 --off
-exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+# exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --off --output VIRTUAL1 --off
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
