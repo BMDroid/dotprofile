@@ -250,6 +250,7 @@ for_window [class="netease-cloud-music"] floating enable border normal
 for_window [class="Fsearch"] floating enable border normal
 for_window [class="GNU Octave"] floating enable border normal
 # for_window [class="vlc"] floating enable border normal
+#for_window [class="Vlc"] floating enable border normal
 # for_window [class="sun-awt-X11-XFramePeer"] floating enable border normal
 # for_window [class="java-lang-Thread"] floating enable border normal
 # for_window [class="Deluge"] floating enable border normal
