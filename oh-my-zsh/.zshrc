@@ -68,6 +68,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 
 # User configuration
 
+# CUDA
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64"
+export CUDA_HOME=/opt/cuda/
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -122,6 +126,7 @@ alias hub='cd ~/Github/'
 alias blog='cd ~/Github/bmdroid.github.io/'
 alias gd='hexo g -d'
 alias vtp='source ~/tensorflow/bin/activate'
+alias vgpu='source ~/tensorflowgpu/bin/activate'
 alias auon='pulseaudio --start'
 alias auoff='pulseaudio --kill'
 alias nvon='sudo tee /proc/acpi/bbswitch <<< ON'
