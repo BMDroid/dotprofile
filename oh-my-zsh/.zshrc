@@ -76,7 +76,7 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64"
 export CUDA_HOME=/opt/cuda/
 
 # Anaconda
-# export PATH="/opt/anaconda/bin:$PATH"
+export PATH="/opt/anaconda/bin:$PATH"
 . /opt/anaconda/etc/profile.d/conda.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -164,6 +164,6 @@ alias temp="sensors"
 alias auon='pulseaudio --start'
 alias auoff='pulseaudio --kill'
 alias nvon='sudo tee /proc/acpi/bbswitch <<< ON'
-alias nvoff='sudo tee /proc/acpi/bbswitch <<< OFF'
+alias nvoff='sudo rmmod nvidia_uvm ; sudo rmmod nvidia ; sudo tee /proc/acpi/bbswitch <<< OFF'
 alias koff='sudo msi-keyboard -m normal -c left,off, -c middle,off, -c right,off,high'
 alias kon='sudo msi-keyboard -m normal -c left,blue,high -c middle,purple, -c right,red,medium'
