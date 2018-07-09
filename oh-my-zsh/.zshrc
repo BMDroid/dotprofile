@@ -76,7 +76,8 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64"
 export CUDA_HOME=/opt/cuda/
 
 # Anaconda
-export PATH="/opt/anaconda/bin:$PATH"
+# export PATH="/opt/anaconda/bin:$PATH"
+. /opt/anaconda/etc/profile.d/conda.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -106,8 +107,8 @@ alias zshconfig="mse ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Python
-alias python="/usr/bin/python3"
-alias python2="/usr/bin/python2"
+# alias python3="/usr/bin/python3"
+# alias python2="/usr/bin/python2"
 alias pyconda="/opt/anaconda/bin/python"
 
 #Expressvpn
@@ -150,8 +151,8 @@ alias gd='hexo g -d'
 # Jupyter Notebook 
 alias note='jupyter-notebook --ip=0.0.0.0 --port=8080'
 
-# Tensorflow
-alias vtp='source ~/workspace/tensorflow/bin/activate'
+# vTensorflow
+alias vcpu='source ~/workspace/tensorflowcpu/bin/activate'
 alias vgpu='source ~/workspace/tensorflowgpu/bin/activate'
 
 # Hardware
