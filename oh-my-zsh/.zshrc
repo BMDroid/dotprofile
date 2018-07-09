@@ -76,7 +76,7 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64"
 export CUDA_HOME=/opt/cuda/
 
 # Anaconda
-export PATH="/opt/anaconda/bin:$PATH"
+# export PATH="/opt/anaconda/bin:$PATH"
 . /opt/anaconda/etc/profile.d/conda.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
