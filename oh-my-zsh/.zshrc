@@ -68,6 +68,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 
 # User configuration
 
+# Solve unknown terminal type
+export TERM=xterm-256color
+
 # CUDA
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64"
 export CUDA_HOME=/opt/cuda/
