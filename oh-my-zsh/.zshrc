@@ -147,6 +147,9 @@ alias hub='cd ~/workspace/github/'
 alias blog='cd ~/workspace/github/bmdroid.github.io/'
 alias gd='hexo g -d'
 
+# Jupyter Notebook 
+alias note='jupyter-notebook --ip=0.0.0.0 --port=8080'
+
 # Tensorflow
 alias vtp='source ~/workspace/tensorflow/bin/activate'
 alias vgpu='source ~/workspace/tensorflowgpu/bin/activate'
