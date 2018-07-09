@@ -155,6 +155,10 @@ alias note='jupyter-notebook --ip=0.0.0.0 --port=8080'
 alias vcpu='source ~/workspace/tensorflowcpu/bin/activate'
 alias vgpu='source ~/workspace/tensorflowgpu/bin/activate'
 
+# Conda TensorFlow
+alias ccpu='conda activate tfcpu'
+alias cgpu='conda activate tfgpu'
+
 # Hardware
 alias temp="sensors"
 alias auon='pulseaudio --start'
