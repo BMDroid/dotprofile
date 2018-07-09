@@ -161,8 +161,7 @@ alias cgpu='conda activate tfgpu'
 
 # Hardware
 alias temp="sensors"
-alias auon='pulseaudio --start'
-alias auoff='pulseaudio --kill'
+alias auon='pulseaudio --kill ; pulseaudio --start'
 alias nvon='sudo tee /proc/acpi/bbswitch <<< ON'
 alias nvoff='sudo rmmod nvidia_uvm ; sudo rmmod nvidia ; sudo tee /proc/acpi/bbswitch <<< OFF'
 alias koff='sudo msi-keyboard -m normal -c left,off, -c middle,off, -c right,off,high'
