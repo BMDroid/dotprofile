@@ -72,6 +72,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cuda/lib64"
 export CUDA_HOME=/opt/cuda/
 
+# Anaconda
+export PATH="/opt/anaconda/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -96,25 +99,37 @@ export CUDA_HOME=/opt/cuda/
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="mse ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Python
+alias python="/usr/bin/python3"
+alias python2="/usr/bin/python2"
+alias pyconda="/opt/anaconda/bin/python"
+
+#Expressvpn
 alias vpnr="expressvpn refresh"
 alias vpnc="expressvpn connect smart"
 alias vpnd="expressvpn disconnect"
 alias vpns="expressvpn status"
 alias netr="systemctl restart expressvpn"
-alias mse="mousepad"
+
+# Pacman
 alias upda="sudo pacman -Syu"
 alias srch="yaourt -Ss"
 alias instlp="sudo pacman -S"
 alias instly="yaourt -S"
 alias uninstl="sudo pacman -Rsc"
 alias clc="sudo pacman -Sc"
-alias temp="sensors"
+
+# System
 alias ll='ls -l'
 alias la='ls -a'
 alias ff='ranger'
 alias edit='sudo nano'
+alias mse="mousepad"
+
+# Github
 alias cl='git clone'
 alias st='git status'
 alias add='git add'
@@ -122,11 +137,19 @@ alias all='git add -A'
 alias cm='git commit -m "'
 alias cma='git commit -a'
 alias push='git push'
+alias pull='git pull'
 alias hub='cd ~/workspace/github/'
+
+# Hexo
 alias blog='cd ~/workspace/github/bmdroid.github.io/'
 alias gd='hexo g -d'
+
+# Tensorflow
 alias vtp='source ~/workspace/tensorflow/bin/activate'
 alias vgpu='source ~/workspace/tensorflowgpu/bin/activate'
+
+# Hardware
+alias temp="sensors"
 alias auon='pulseaudio --start'
 alias auoff='pulseaudio --kill'
 alias nvon='sudo tee /proc/acpi/bbswitch <<< ON'
