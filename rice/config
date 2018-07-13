@@ -170,11 +170,11 @@ set $monitor1 eDP1
 set $monitor2 HDMI2
 
 # Assign the workspace to certain display
-workspace $ws1 output $monitor2
-workspace $ws2 output $monitor2
-workspace $ws3 output $monitor2
-workspace $ws4 output $monitor2
-# workspace $ws4 output $monitor1
+# workspace $ws1 output $monitor2
+# workspace $ws2 output $monitor2
+# workspace $ws3 output $monitor2
+# workspace $ws4 output $monitor2
+# workspace $ws5 output $monitor2
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
