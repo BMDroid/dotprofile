@@ -207,20 +207,17 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
 assign [class="Google-chrome"] $ws1
 assign [class="Firefox"] $ws1
-# assign [class="Code"] $ws2
+assign [class="Thunar"] $ws1
+assign [class="Code"] $ws2
 # assign [class="jetbrains-idea-ce"] $ws2
 # assign [class="URxvt"] $ws3
-# assign [class="Thunar"] $ws3
-assign [class="Deluge"] $ws4
-assign [class="qBittorrent"] $ws4
-assign [class="sun-awt-X11-XFramePeer"] $ws4
-assign [class="java-lang-Thread"] $ws4
+assign [class="FreeMind"] $ws3
+assign [class="Deluge"] $ws5
+assign [class="qBittorrent"] $ws5
+assign [class="sun-awt-X11-XFramePeer"] $ws5
+assign [class="java-lang-Thread"] $ws5
 assign [class="Steam"] $ws5
 
 # Open specific applications in floating mode
@@ -257,7 +254,7 @@ for_window [class="Fsearch"] floating enable border normal
 for_window [class="GNU Octave"] floating enable border normal
 ##for_window [class="VirtualBox Machine"] floating enable border normal
 # for_window [class="vlc"] floating enable border normal
-#for_window [class="Vlc"] floating enable border normal
+# for_window [class="Vlc"] floating enable border normal
 # for_window [class="sun-awt-X11-XFramePeer"] floating enable border normal
 # for_window [class="java-lang-Thread"] floating enable border normal
 # for_window [class="Deluge"] floating enable border normal
@@ -337,9 +334,8 @@ exec_always --no-startup-id fix_xcursor
 exec --no-startup-id fcitx
 # exec_always xrandr --output HDMI2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --mode 1920x1080 --pos 0x360 --rotate normal --output VIRTUAL1 --off
 # exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
-# exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --off --output VIRTUAL1 --off
-exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x1440 --rotate normal --output VIRTUAL1 --off
-
+# exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x1440 --rotate normal --output VIRTUAL1 --off
+exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --off --output VIRTUAL1 --off
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
