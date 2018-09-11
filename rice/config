@@ -51,6 +51,9 @@ bindsym $mod+x exec firefox
 # launch thunar
 bindsym $mod+o exec --no-startup-id thunar
 
+# launch dolphin
+bindsym $mod+d exec --no-startup-id dolphin
+
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -211,6 +214,7 @@ assign [class="Google-chrome"] $ws1
 assign [class="Firefox"] $ws1
 assign [class="Thunar"] $ws1
 assign [class="Code"] $ws2
+assign [class="okular"] $ws2
 # assign [class="jetbrains-idea-ce"] $ws2
 # assign [class="URxvt"] $ws3
 assign [class="FreeMind"] $ws3
