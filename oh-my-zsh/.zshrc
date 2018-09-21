@@ -151,9 +151,9 @@ alias gd='hexo g -d'
 # Jupyter Notebook 
 alias note='jupyter-notebook --ip=0.0.0.0 --port=8080'
 
-# vTensorflow
-alias vcpu='source ~/workspace/tensorflowcpu/bin/activate'
-alias vgpu='source ~/workspace/tensorflowgpu/bin/activate'
+# virtual env Tensorflow
+# alias vcpu='source ~/workspace/tensorflowcpu/bin/activate'
+# alias vgpu='source ~/workspace/tensorflowgpu/bin/activate'
 
 # Conda TensorFlow
 alias ccpu='conda activate tfcpu'
