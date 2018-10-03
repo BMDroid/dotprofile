@@ -218,9 +218,11 @@ assign [class="Pcmanfm"] $ws1
 assign [class="Code"] $ws2
 assign [class="okular"] $ws2
 assign [class="calibre-ebook-viewer"] $ws2
+assign [class="calibre"] $ws2
 # assign [class="jetbrains-idea-ce"] $ws2
 # assign [class="URxvt"] $ws3
 assign [class="FreeMind"] $ws3
+assign [class="mpv"] $ws4
 assign [class="Deluge"] $ws5
 assign [class="qBittorrent"] $ws5
 assign [class="sun-awt-X11-XFramePeer"] $ws5
@@ -335,7 +337,7 @@ exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 60 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id fcitx
