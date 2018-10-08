@@ -216,6 +216,7 @@ assign [class="Thunar"] $ws1
 assign [class="Pcmanfm"] $ws1
 # assign [class="dolphin"] $ws1
 assign [class="Code"] $ws2
+assign [class="Electron"] $ws2
 assign [class="okular"] $ws2
 assign [class="calibre-ebook-viewer"] $ws2
 assign [class="calibre"] $ws2
@@ -337,7 +338,7 @@ exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 60 -locker blurlock
+exec --no-startup-id xautolock -time 15 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id fcitx
