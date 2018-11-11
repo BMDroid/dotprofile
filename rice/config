@@ -215,15 +215,18 @@ assign [class="Firefox"] $ws1
 assign [class="Thunar"] $ws1
 assign [class="Pcmanfm"] $ws1
 # assign [class="dolphin"] $ws1
+assign [class="mpv"] $ws2
 assign [class="Code"] $ws2
+assign [class="Foxit Reader"] $ws2
 assign [class="Electron"] $ws2
 assign [class="okular"] $ws2
 assign [class="calibre-ebook-viewer"] $ws2
 assign [class="calibre"] $ws2
 # assign [class="jetbrains-idea-ce"] $ws2
 # assign [class="URxvt"] $ws3
+assign [class="Filezilla"] $ws3
 assign [class="FreeMind"] $ws3
-assign [class="mpv"] $ws4
+assign [class="Spotify"] $ws4
 assign [class="Deluge"] $ws5
 assign [class="qBittorrent"] $ws5
 assign [class="sun-awt-X11-XFramePeer"] $ws5
@@ -345,7 +348,8 @@ exec --no-startup-id fcitx
 # exec_always xrandr --output HDMI2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --mode 1920x1080 --pos 0x360 --rotate normal --output VIRTUAL1 --off
 # exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 # exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x1440 --rotate normal --output VIRTUAL1 --off
-exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --off --output VIRTUAL1 --off
+# exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --off --output VIRTUAL1 --off
+exec_always xrandr --output HDMI2 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1920x1080 --pos 312x1440 --rotate normal --output VIRTUAL1 --off
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
